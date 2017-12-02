@@ -1,7 +1,7 @@
 
 # Stock Price Streamer
 ## Desktop View
-![desktop](https://user-images.githubusercontent.com/25477734/33512981-3f8f561e-d6f7-11e7-80d7-5e1a6f8048c3.png)
+![desktop1](https://user-images.githubusercontent.com/25477734/33513346-d183a268-d6fd-11e7-8a1d-0511f6f77a22.png)
 ## Mobile View
 ![mobile](https://user-images.githubusercontent.com/25477734/33512993-5742ded4-d6f7-11e7-8157-b96f9b8de565.png)
 
