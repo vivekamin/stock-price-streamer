@@ -3,26 +3,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
-## Development server
+## Problem
+Create a service that allows for a user to search for stock name. On a successful search It will add current stock price to list.The user can add and remove as many stocks as he likes to add. The Graph and list will show a live price change for all stocks.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Solution
+Developed Angular application to consume IEX Trading RESTful API. Deployed application on heroku using express.js as dependency.
 
-## Code scaffolding
+## Technology Stack
+Angular,BootStrap v3, HTML, Heroku & express.js(for deployement).
+For charts, I have used ng2-charts[here](https://github.com/valor-software/ng2-charts) which implements chart.js(library) for Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deployement(Demo)
+I have hosted the application on heroku [here](https://stock-price-streamer.herokuapp.com/)
 
-## Build
+## My LinkedIn Profile
+[LinkedIn](https://www.linkedin.com/in/vivek-amin/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Run the project
+git clone https://github.com/vivekamin/LiveStockViewer.git
+npm install
+npm start(To run the application) or ng serve(for development)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
