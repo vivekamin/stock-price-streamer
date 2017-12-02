@@ -1,5 +1,9 @@
 
-# LiveStockPrice
+# Stock Price Streamer
+## Desktop View
+![desktop](https://user-images.githubusercontent.com/25477734/33512981-3f8f561e-d6f7-11e7-80d7-5e1a6f8048c3.png)
+## Mobile View
+![mobile](https://user-images.githubusercontent.com/25477734/33512993-5742ded4-d6f7-11e7-8157-b96f9b8de565.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
@@ -11,7 +15,7 @@ Developed Angular application to consume IEX Trading RESTful API. Deployed appli
 
 ## Technology Stack
 Angular,BootStrap v3, HTML, Heroku & express.js(for deployement).
-For charts, I have used ng2-charts[here](https://github.com/valor-software/ng2-charts) which implements chart.js(library) for Angular
+For charts, I have used [ng2-charts](https://github.com/valor-software/ng2-charts) which implements chart.js(library) for Angular
 
 ## Deployement(Demo)
 I have hosted the application on heroku [here](https://stock-price-streamer.herokuapp.com/)
@@ -21,7 +25,9 @@ I have hosted the application on heroku [here](https://stock-price-streamer.hero
 
 ## Run the project
 git clone https://github.com/vivekamin/LiveStockViewer.git
+
 npm install
+
 npm start(To run the application) or ng serve(for development)
 
 
