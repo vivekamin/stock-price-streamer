@@ -98,7 +98,7 @@ export class liveStockComponent implements OnInit {
   }
   onSubmit() {
     //alert("Clicked")
-    let x = this.name1.toUpperCase()
+    let x = this.name1.toUpperCase().trim()
     if (this.ListOfStock.includes(x)) {
       alert("Already Added")
     }
