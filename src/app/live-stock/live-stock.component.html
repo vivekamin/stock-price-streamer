@@ -45,6 +45,12 @@
     <div class="col-md-9">
 
         <div align="center">
+          <p class="lead h3">
+            Stock Price Chart
+            <small>  (Hovering over bar will show the price)</small>
+          </p>
+
+
             <div *ngIf="flag>0" style="width:80%;">
                 <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
             </div>
