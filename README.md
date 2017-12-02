@@ -28,7 +28,9 @@ git clone https://github.com/vivekamin/LiveStockViewer.git
 
 npm install
 
-npm start(To run the application) or ng serve(for development)
+npm start(To run the application: hit http://localhost:8080)
+
+or ng serve(for development )
 
 
 
