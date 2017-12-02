@@ -8,11 +8,11 @@
 
         <div class="row text-center">
             <div class="col-xs-12">
-                <div class="input-group" style="width:40%">
+                <div class="input-group" style="width:80%">
 
                     <input id="name" type="text" class="form-control rounded" id="name" required [(ngModel)]="name1" name="name" #name="ngModel" placeholder="Enter stock's symbol name(i.e amzn,fb,googl,tsla)." required="required">
 
-                    <div class="input-group-btn">
+                    <div class="input-group-btn" style="width:20%">
                         <button type="submit" class="btn btn-primary rounded" [disabled]="!stockForm.form.valid">Submit</button>
                     </div>
                 </div>
