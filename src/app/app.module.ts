@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { liveStockComponent } from './live-stock.component'
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule }   from '@angular/forms';
+import { ChartsModule} from 'ng2-charts'
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    liveStockComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

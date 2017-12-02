@@ -1,0 +1,79 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <p class="navbar-brand">Live StockPrice Viewer</p>
+</nav>
+<div class="text-center ">
+<form class="form-inline" (ngSubmit)="onSubmit()" #stockForm="ngForm">
+
+  <div class="row text-center">
+   <div class="col-xs-12">
+     <div class="input-group input-group-lg">
+
+    <input  id="name" type="text" class="form-control rounded" id="name"
+              required
+              [(ngModel)]="name1" name="name"
+              #name="ngModel" placeholder="Enter stock name." required="required">
+
+
+
+              <div class="input-group-btn">
+                   <button type="submit" class="btn btn-primary rounded" [disabled]="!stockForm.form.valid">Submit</button>
+                  </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+              </div><!-- /.col-xs-12 -->
+
+ </div>
+
+
+
+
+</form>
+</div>
+
+
+<div class="row" *ngIf="flag>0">
+<hr />
+<div class="col-md-3">
+
+
+
+
+  <!-- <button type="button" (click)="startGetting()" class="btn btn-primary btn-lg btn-block">Start Polling Again</button>
+  <button type="button" (click)="stopGetting()" class="btn btn-secondary btn-lg btn-block">Stop Polling Again</button> -->
+
+    <div class="card-block">
+
+      <p class="lead h3">
+        Price List
+      </p>
+    <ul class="list-group">
+      <li class="list-group-item justify-content-between" *ngFor="let item of ListOfStock; let k=index">
+        {{item}}
+        <span (click)="removeThisStock(k)"  class="badge badge-pill remove" style="background-color:#d9534f">Remove</span>
+        <span class="badge badge-default badge-pill"  style="background-color:#0275d8">{{Price[item]}}</span>
+
+
+
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="col-md-9">
+
+<div align="center">
+  <div *ngIf="flag>0" style="width:80%;">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>
+</div>
+</div>
