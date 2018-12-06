@@ -35,7 +35,7 @@ export class liveStockComponent implements OnInit {
   }
 
   startGetting() {
-    let timer1 = Observable.timer(1, 3000)
+    let timer1 = Observable.timer(1, 1000)
 
 
     this.timer = timer1.subscribe(tick => {
