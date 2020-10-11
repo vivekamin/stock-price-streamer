@@ -17,9 +17,6 @@ Developed Angular application to consume IEX Trading RESTful API. Deployed appli
 Angular,BootStrap v3, HTML, Heroku & express.js(for deployement).
 For charts, I have used [ng2-charts](https://github.com/valor-software/ng2-charts) which implements chart.js(library) for Angular
 
-## Deployement(Demo)
-I have hosted the application on heroku [here](https://stock-price-streamer.herokuapp.com/)
-
 ## My LinkedIn Profile
 [LinkedIn](https://www.linkedin.com/in/vivek-amin/)
 
